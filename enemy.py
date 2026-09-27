@@ -1,12 +1,12 @@
 import random
 
-class Hero:
+class Enemy:
     """The hero blueprint will be implemented later in the project."""
 
-    def __init__(self, name):
+    def __init__(self, name, health = 50, attackPower = 8):
         self.name = name
-        self.health = 100
-        self.attack_power = 20
+        self.health = health
+        self.attack_power = attackPower
 
     def attack(self):
         # Return a random value from 1 through this Hero's attack power.

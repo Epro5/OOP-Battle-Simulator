@@ -40,24 +40,10 @@ def main():
 
     print("")
 
-    print("But no hero has answered the call... yet.")
-
-    print("")
-
-    bob = Hero("Bob")
+    hero = Hero("Bob")
     max = Mage("Max")
 
-    print(f"{bob.name} enters the arena with {bob.health} health.")
-    bobsAttackNumber = bob.attack()
-
-    print(f"{max.name} enters the arena with {max.health} health.")
-    maxAttackNumber = max.attack()
-
-    print("")
-
-    goblin.take_damage(bobsAttackNumber)
-    goblinTwo.take_damage(maxAttackNumber)
-
+    battle(hero, goblin)
 
 
 
